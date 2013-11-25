@@ -1,0 +1,61 @@
+# German translation for the Audit-Application
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Foswiki $Id\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2012-11-26 00:09+0200\n"
+"Last-Translator: Bartek \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.1.6\n"
+
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+msgid "Employees"
+msgstr "Mitarbeiter"
+
+msgid "Create new employee"
+msgstr "Neuen Mitarbeiter anlegen"
+
+msgid "All employees"
+msgstr "Alle Mitarbeiter"
+
+msgid "Surname"
+msgstr "Nachname"
+
+msgid "First name"
+msgstr "Vorname"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Job description"
+msgstr "Tätigkeitsbeschreibung"
+
+msgid "Function"
+msgstr "Funktion"
+
+msgid "Representative function"
+msgstr "Repräsentative Funktion"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Employee data"
+msgstr "Mitarbeiterdaten"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Alumnus/Alumna"
+msgstr "Alumnus/Alumna"
+
+msgid "Deputy"
+msgstr "Stellvertreter"

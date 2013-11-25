@@ -1,0 +1,10 @@
+%META:TOPICINFO{author="BartekHaratyk" date="1372866983" format="1.1" version="4"}%
+%META:TOPICPARENT{name="WebHome"}%
+%IF{
+"istopic '%USERSWEB%.Default%STATISTICSTOPIC%'"
+then="$percentINCLUDE{$quot%USERSWEB%.Default%STATISTICSTOPIC%$quot}$percent"
+else="$percentINCLUDE{$quot%SYSTEMWEB%.Default%STATISTICSTOPIC%$quot}$percent"
+}%
+| <!--statDate--> | <!--statViews--> | <!--statSaves--> | <!--statUploads--> | <!--statTopViews--> | <!--statTopContributors--> |
+| Feb 2013 |  39 |  6 |  0 | &nbsp;11 [[Trash.AuditAuditWebHome]]<br />&nbsp;10 [[WebHome]]<br />&nbsp;&nbsp;5 [[WebTopicList]]<br />&nbsp;&nbsp;5 [[WebPreferences]]<br />&nbsp;&nbsp;2 [[AuditberichtMassnahmenTemplate]]<br />&nbsp;&nbsp;2 [[AuditberichtForm]]<br />&nbsp;&nbsp;2 [[CustomSkinCommentPluginTemplate]]<br />&nbsp;&nbsp;1 [[AuditberichtViewTemplate]]<br />&nbsp;&nbsp;1 [[WebStatistics]] | &nbsp;&nbsp;6 Main.AdminUser |
+| Nov 2012 |  195 |  47 |  0 | &nbsp;52 [[Trash.AuditAuditWebHome]]<br />&nbsp;47 [[WebHome]]<br />&nbsp;20 [[Auditbericht005]]<br />&nbsp;17 [[Auditbericht005Massnahmen]]<br />&nbsp;10 [[Auditbericht013Massnahmen]]<br />&nbsp;&nbsp;9 [[Auditbericht013]]<br />&nbsp;&nbsp;7 [[Auditbericht003Massnahmen]]<br />&nbsp;&nbsp;6 [[Auditbericht003]]<br />&nbsp;&nbsp;4 [[Auditbericht016Massnahmen]]<br />&nbsp;&nbsp;4 [[Auditbericht014]]<br />&nbsp;&nbsp;3 [[Auditbericht000]] | &nbsp;15 Main.AdminUser<br />&nbsp;15 Main.OrtrudPohl<br />&nbsp;10 Main.CarstenBehrens<br />&nbsp;&nbsp;6 Main.HaraldSchoenfeld<br />&nbsp;&nbsp;1 Main.AndreaBoettger |

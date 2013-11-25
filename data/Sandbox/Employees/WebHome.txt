@@ -1,0 +1,31 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385376301" format="1.1" reprev="1" version="1"}%
+%META:TOPICPARENT{name="WebHome"}%
+<div class="widgetBlockTitle">%MAKETEXT{"Create new employee"}%</div>
+<div class="widgetBlockContent">
+<form action="/bin/save/%WEB%/EmployeeAUTOINC000" method="post" name="Member">
+<input type="hidden" name="formtemplate" value="EmployeeForm">
+<input type="hidden" name="templatetopic" value="EmployeeTemplate">
+<input type="hidden" name="action_quietsave" value="1">
+%BUTTON{"%MAKETEXT{"Create new employee"}%" type="submit"}%
+%CLEAR% 
+</form>
+</div>
+
+<div class="widgetBlockTitle">%MAKETEXT{"All employees"}%</div>
+<div class="widgetBlockContent">
+%TABLE{%TABLETHEMEPARAM%}%
+| *%MAKETEXT{"Surname"}%* | *%MAKETEXT{"First name"}%* | *%MAKETEXT{"ID"}%* | *%MAKETEXT{"Job description"}%* | *%MAKETEXT{"Function"}%* | *%MAKETEXT{"Representative function"}%* | *%MAKETEXT{"Status"}%* |
+%SOLRSEARCH{
+"form:EmployeeForm" 
+web="%WEB%"
+format="| <a href=\"%SCRIPTURL{view}%/$web/$topic\" title=\"$topic\">$percntIF{\"'$field_Surname_s'='^\$'\" then=\"$topic\" else=\"$field_Surname_s\"}$percnt</a> | $percntIF{\"'$field_Name_s'=~'^\$'\" then=\"\" else=\"$field_Name_s\"}$percnt | $percntMAKETEXT{\"$percentIF{\"'$field_ID_s'=~'^\$'\" then=\"\" else=\"$field_ID_s\"}$percent\"}$percnt | $percntMAKETEXT{\"$percentIF{\"'$field_JobDescription_s'=~'^\$'\" then=\"\" else=\"$field_JobDescription_s\"}$percent\"}$percnt | $percentIF{\"'$field_Function_lst'=~'^\$'\" then=\"\" else=\"$field_Function_lst\"}$percent | $percentIF{\"'$field_RepresentativeFunction_lst'=~'^\$'\" then=\"\" else=\"$field_RepresentativeFunction_lst\"}$percent | $percntMAKETEXT{\"$percentIF{\"'$field_Status_s'=~'^\$'\" then=\"\" else=\"$field_Status_s\"}$percent\"}$percnt | $n"
+footer=""
+sort="field_Title_s asc"
+rows="9999"
+}%
+</table>
+</div>
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminUser"}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="SystemView"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%

@@ -1,0 +1,28 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385379490" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="Prozesse.Templates"}%
+%TMPL:INCLUDE{edit}%
+
+%TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
+%TMPL:P{"formstart"}%%TMPL:P{"formtop"}%
+
+<div class="widgetBlockTitle">%MAKETEXT{"Employee data"}%</div>
+<div class="widgetBlockContent">
+<table class="metaDataHead">
+<tr><td width="200px">%MAKETEXT{"Surname"}%:</td><td>%RENDERFOREDIT{field="Surname" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"First name"}%:</td><td>%RENDERFOREDIT{field="FirstName" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"ID"}%:</td><td>%RENDERFOREDIT{field="ID" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"Job description"}%:</td><td>%RENDERFOREDIT{field="JobDescription" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"Function"}%:</td><td>%RENDERFOREDIT{field="Function" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"Representative function"}%:</td><td>%RENDERFOREDIT{field="RepresentativeFunction" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"Status"}%:</td><td>%RENDERFOREDIT{field="Status" format="$edit"}%</td></tr></tr>
+</table>
+</div>
+
+
+%TMPL:P{"topicinfo"}%
+%TMPL:P{"formend"}%
+
+%TMPL:END%
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminUser"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%

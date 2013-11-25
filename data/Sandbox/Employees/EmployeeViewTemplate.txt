@@ -1,0 +1,23 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385379506" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="Prozesse.Templates"}%
+%TMPL:INCLUDE{"view"}%
+
+%TMPL:DEF{"content"}%
+%TMPL:P{"simpleheader"}%
+
+<div class="widgetBlockTitle">%MAKETEXT{"Employee data"}%</div>
+<div class="widgetBlockContent">
+<table class="metaDataHead">
+<tr><td width="200px">%MAKETEXT{"Surname"}%:</td><td>%RENDERFORDISPLAY{field="Surname" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"First name"}%:</td><td>%RENDERFORDISPLAY{field="FirstName" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"ID"}%:</td><td>%RENDERFORDISPLAY{field="ID" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Job description"}%:</td><td>%RENDERFORDISPLAY{field="JobDescription" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Function"}%:</td><td>%RENDERFORDISPLAY{field="Function" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Representative function"}%:</td><td>%RENDERFORDISPLAY{field="RepresentativeFunction" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Status"}%:</td><td>%RENDERFORDISPLAY{field="Status" format="$value"}%</td></tr></tr>
+</table>
+</div>
+%TMPL:END%
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminUser"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
