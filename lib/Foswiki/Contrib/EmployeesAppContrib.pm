@@ -3,7 +3,7 @@ package Foswiki::Contrib::EmployeesAppContrib;
 use strict;
 use warnings;
 
-our $VERSION = '$Rev$';
+our $VERSION = '1';
 our $RELEASE = "1.00";
 
 our $SHORTDESCRIPTION = 'Modell Aachen Employees WikiApp';
