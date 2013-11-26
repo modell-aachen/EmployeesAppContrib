@@ -1,8 +1,8 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385376301" format="1.1" reprev="1" version="1"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1385474723" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="WebHome"}%
 <div class="widgetBlockTitle">%MAKETEXT{"Create new employee"}%</div>
 <div class="widgetBlockContent">
-<form action="/bin/save/%WEB%/EmployeeAUTOINC000" method="post" name="Member">
+<form action="%SCRIPTURLPATH{save}%/%WEB%/EmployeeAUTOINC000" method="post" name="Member">
 <input type="hidden" name="formtemplate" value="EmployeeForm">
 <input type="hidden" name="templatetopic" value="EmployeeTemplate">
 <input type="hidden" name="action_quietsave" value="1">
