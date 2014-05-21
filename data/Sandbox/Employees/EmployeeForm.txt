@@ -1,12 +1,12 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385379498" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1400658416" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="Prozesse.Templates"}%
 | *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
-| Surname | text | 48 | | | |
-| FirstName | text | 48 | | | |
+| Surname | text | 48 | | | M |
+| FirstName | text | 48 | | | M |
 | ID | text | 48 | | | |
 | JobDescription  | text | 48 | | | |
 | Function | textboxlist | 48 | | | |
-| RepresentativeFunction | textboxlist | 48 | | | |
+| Representative | textboxlist | 20 mustMatch | %USERAUTOCOMPLETE% | | |
 | Status | select+values | 1 | %MAKETEXT{"Active"}%=Active, %MAKETEXT{"Alumnus/Alumna"}%=Alumnus/Alumna | | |
 
    * Set ALLOWTOPICCHANGE = AdminUser

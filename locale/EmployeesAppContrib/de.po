@@ -1,4 +1,4 @@
-# German translation for the Audit-Application
+# German translation for the Employees-Application
 # Translators:
 msgid ""
 msgstr ""
@@ -15,23 +15,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.1.6\n"
 
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "All employees"
+msgstr "Alle Mitarbeiter"
+
+msgid "Alumnus/Alumna"
+msgstr "Alumnus/Alumna"
+
+msgid "Create new employee"
+msgstr "Neuen Mitarbeiter anlegen"
+
+msgid "Deputy"
+msgstr "Stellvertreter"
+
+msgid "Employee data"
+msgstr "Mitarbeiterdaten"
+
 msgid "Employee"
 msgstr "Mitarbeiter"
 
 msgid "Employees"
 msgstr "Mitarbeiter"
 
-msgid "Create new employee"
-msgstr "Neuen Mitarbeiter anlegen"
-
-msgid "All employees"
-msgstr "Alle Mitarbeiter"
-
-msgid "Surname"
-msgstr "Nachname"
-
 msgid "First name"
 msgstr "Vorname"
+
+msgid "Function"
+msgstr "Funktion"
 
 msgid "ID"
 msgstr "ID"
@@ -39,23 +51,14 @@ msgstr "ID"
 msgid "Job description"
 msgstr "Tätigkeitsbeschreibung"
 
-msgid "Function"
-msgstr "Funktion"
-
 msgid "Representative function"
 msgstr "Repräsentative Funktion"
+
+msgid "Representative"
+msgstr "Stellvertretend"
 
 msgid "Status"
 msgstr "Status"
 
-msgid "Employee data"
-msgstr "Mitarbeiterdaten"
-
-msgid "Active"
-msgstr "Aktiv"
-
-msgid "Alumnus/Alumna"
-msgstr "Alumnus/Alumna"
-
-msgid "Deputy"
-msgstr "Stellvertreter"
+msgid "Surname"
+msgstr "Nachname"

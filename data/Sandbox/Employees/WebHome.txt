@@ -1,5 +1,6 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1385474723" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400659075" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="WebHome"}%
+<div style="display:none;">
 <div class="widgetBlockTitle">%MAKETEXT{"Create new employee"}%</div>
 <div class="widgetBlockContent">
 <form action="%SCRIPTURLPATH{save}%/%WEB%/EmployeeAUTOINC000" method="post" name="Member">
@@ -10,18 +11,20 @@
 %CLEAR% 
 </form>
 </div>
+</div>
 
 <div class="widgetBlockTitle">%MAKETEXT{"All employees"}%</div>
 <div class="widgetBlockContent">
 %TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Surname"}%* | *%MAKETEXT{"First name"}%* | *%MAKETEXT{"ID"}%* | *%MAKETEXT{"Job description"}%* | *%MAKETEXT{"Function"}%* | *%MAKETEXT{"Representative function"}%* | *%MAKETEXT{"Status"}%* |
+| *%MAKETEXT{"Surname"}%* | *%MAKETEXT{"First name"}%* | *%MAKETEXT{"ID"}%* | *%MAKETEXT{"Job description"}%* | *%MAKETEXT{"Function"}%* | *%MAKETEXT{"Representative"}%* | *%MAKETEXT{"Status"}%* |
 %SOLRSEARCH{
-"form:EmployeeForm" 
+"form:*EmployeeForm" 
+fields="web, topic, field_Surname_s, field_FirstName_s, field_ID_s, field_JobDescription_s, field_Function_lst, field_Representative_lst, field_Status_s"
 web="%WEB%"
-format="| <a href=\"%SCRIPTURL{view}%/$web/$topic\" title=\"$topic\">$percntIF{\"'$field_Surname_s'='^\$'\" then=\"$topic\" else=\"$field_Surname_s\"}$percnt</a> | $percntIF{\"'$field_Name_s'=~'^\$'\" then=\"\" else=\"$field_Name_s\"}$percnt | $percntMAKETEXT{\"$percentIF{\"'$field_ID_s'=~'^\$'\" then=\"\" else=\"$field_ID_s\"}$percent\"}$percnt | $percntMAKETEXT{\"$percentIF{\"'$field_JobDescription_s'=~'^\$'\" then=\"\" else=\"$field_JobDescription_s\"}$percent\"}$percnt | $percentIF{\"'$field_Function_lst'=~'^\$'\" then=\"\" else=\"$field_Function_lst\"}$percent | $percentIF{\"'$field_RepresentativeFunction_lst'=~'^\$'\" then=\"\" else=\"$field_RepresentativeFunction_lst\"}$percent | $percntMAKETEXT{\"$percentIF{\"'$field_Status_s'=~'^\$'\" then=\"\" else=\"$field_Status_s\"}$percent\"}$percnt | $n"
+format="| <a href=\"%SCRIPTURL{view}%/$web/$topic\" title=\"$topic\">$field_Surname_s</a> | $field_FirstName_s | $field_ID_s | $field_JobDescription_s | $field_Function_lst | $field_Representative_lst | $percntMAKETEXT{\"$field_Status_s\"}$percnt | $n"
 footer=""
-sort="field_Title_s asc"
-rows="9999"
+sort="field_Surname_s asc"
+rows="9999999"
 }%
 </table>
 </div>

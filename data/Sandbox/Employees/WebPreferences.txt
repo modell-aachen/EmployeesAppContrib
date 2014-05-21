@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1385392288" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400657169" format="1.1" reprev="2" version="2"}%
 ---+!! <nop>%WEB% Web Preferences
 
 %TOC%
@@ -8,6 +8,8 @@
    * Set CONTENTTEMPLATEWEB = 
    
    * Set WORKFLOW = 
+
+   * Set NO_MODAC_HEAD = 1
    
 
 ---++ Appearance
