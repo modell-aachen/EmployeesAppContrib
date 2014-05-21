@@ -1,0 +1,25 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1385392654" format="1.1" reprev="1" version="1"}%
+---+!! EmployeesAppContrib
+
+Modell Aachen Employees WikiApp
+
+---++ Installation
+
+   * The EmployeesAppContrib will create a subweb _Employees_ in the sandbox.
+   * Move this subweb to where you want and rename it if needed.
+   * Reload web-server and restart iwatch.
+   * To use the standard app theme of Modell Aachen GmbH:
+      * Make sure that the topic _Custom/AppThemeCSS_ and its attachment _apptheme.css_ exist.
+      * Add following line to SitePreferences if not exists yet:
+
+<pre style="margin-left: 80px;">
+Set TABLETHEMEPARAM = headerrows="1" sort="on" tablewidth="100%" tableborder="0" headeralign="left" headerbg="#EEEEEE" cellpadding="8" cellspacing="3" cellborder="0" databg="#f8fcff"</pre>
+
+   * Customize the permissions in the section "Access control" in WebPreferences.
+   * Customize further settings as customer asked.
+   * For further information especially in association with the _RoleApp_ please read [[%SYSTEMWEB%.RollenAppContrib]] (if installed).
+---++ Info
+
+|  Author: | Modell Aachen GmbH |
+|  Home: | http://www.modell-aachen.de |
+|  Support: | http://www.modell-aachen.de |
