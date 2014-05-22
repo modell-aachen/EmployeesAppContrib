@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400657633" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400772476" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="Prozesse.Templates"}%
 %TMPL:INCLUDE{"view"}%
 
@@ -12,8 +12,8 @@
 <tr><td>%MAKETEXT{"First name"}%:</td><td>%RENDERFORDISPLAY{field="FirstName" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"ID"}%:</td><td>%RENDERFORDISPLAY{field="ID" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Job description"}%:</td><td>%RENDERFORDISPLAY{field="JobDescription" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Function"}%:</td><td>%RENDERFORDISPLAY{field="Function" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Representative"}%:</td><td>%RENDERFORDISPLAY{field="Representative" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Role"}%:</td><td>%RENDERFORDISPLAY{field="Function" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Representative role"}%:</td><td>%RENDERFORDISPLAY{field="Representative" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Status"}%:</td><td>%RENDERFORDISPLAY{field="Status" format="$value"}%</td></tr></tr>
 </table>
 </div>

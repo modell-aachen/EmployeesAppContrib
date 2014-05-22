@@ -54,6 +54,9 @@ msgstr "Tätigkeitsbeschreibung"
 msgid "Representative function"
 msgstr "Repräsentative Funktion"
 
+msgid "Representative role"
+msgstr "Stellvertreter-Rolle"
+
 msgid "Representative"
 msgstr "Stellvertretend"
 
