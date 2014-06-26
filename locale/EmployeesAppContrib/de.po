@@ -43,7 +43,7 @@ msgid "First name"
 msgstr "Vorname"
 
 msgid "Function"
-msgstr "Funktion"
+msgstr "Aufgabe"
 
 msgid "ID"
 msgstr "ID"
