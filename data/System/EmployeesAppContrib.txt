@@ -5,7 +5,7 @@ Modell Aachen Employees WikiApp
 
 ---++ Installation
 
-   * The EmployeesAppContrib will create a subweb _Employees_ in the sandbox.
+   * The EmployeesAppContrib will create a subweb _Employees_ in _apps.
    * Move this subweb to where you want and rename it if needed.
    * Reload web-server and restart iwatch.
    * To use the standard app theme of Modell Aachen GmbH:
