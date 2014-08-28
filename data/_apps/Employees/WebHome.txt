@@ -32,3 +32,4 @@ rows="9999999"
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminUser"}%
 %META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="SystemView"}%
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
+%META:PREFERENCE{name="TOPICTITLE" title="TOPICTITLE" type="Set" value="%25MAKETEXT%7b%22Employees%22%7d%25"}%
