@@ -1,21 +1,79 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400772476" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1448034736" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="Prozesse.Templates"}%
 %TMPL:INCLUDE{"view"}%
+
+%TMPL:DEF{"modacActionButtons"}%
+   <ul id="modacButtonsLEFT" class="modacTabs">
+      <li>
+         %TMPL:P{"modacSystemTab"}%
+      </li>
+   </ul>
+      <ul id="modacButtonsRIGHT" class="modacTabs" style="background-image: none">
+      <li id="modacMore">
+         <div class="modacActionButton">
+            <a class="modacChanging" href="%SCRIPTURLPATH{"edit"}%/%USERINFO{format="$wikiusername"}%?template=UserFormEdit;t=1447922618">%MAKETEXT{"Edit personal Page"}%</a>
+         </div>
+      </li>
+      <li id="modacSearchBox">
+         %TMPL:P{"SearchBox"}%
+      </li>
+   </ul>
+%TMPL:END%
 
 %TMPL:DEF{"content"}%
 %TMPL:P{"simpleheader"}%
 
-<div class="widgetBlockTitle">%MAKETEXT{"Employee data"}%</div>
+%LDAPUSERS{
+hideunknown="off"
+include="%URLPARAM{"employee"}%"
+format="<div class=\"widgetBlockTitle\">$cn</div>"
+limit="1"
+}%
 <div class="widgetBlockContent">
-<table class="metaDataHead">
-<tr><td width="200px">%MAKETEXT{"Surname"}%:</td><td>%RENDERFORDISPLAY{field="Surname" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"First name"}%:</td><td>%RENDERFORDISPLAY{field="FirstName" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"ID"}%:</td><td>%RENDERFORDISPLAY{field="ID" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Job description"}%:</td><td>%RENDERFORDISPLAY{field="JobDescription" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Role"}%:</td><td>%RENDERFORDISPLAY{field="Function" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Representative role"}%:</td><td>%RENDERFORDISPLAY{field="Representative" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Status"}%:</td><td>%RENDERFORDISPLAY{field="Status" format="$value"}%</td></tr></tr>
-</table>
+%SOLRSEARCH{
+"%URLPARAM{"employee"}% form:*UserForm"
+web="%USERSWEB%"
+id="userSearch"
+fields="web, topic, field_FirstName_s, field_Profession_s"
+format="$percntIF{\"'$percntATTACHMENTLIST{topic=\"$topic\" web=\"%USERSWEB%\" format=\"$fileName\" limit=\"1\" extenstion=\"gif,jpg,png\"}$percnt'=''\"
+   then=\"<div style='float: right;width: 10$dollarpercnt;'></div>\"
+   else=\"<div style='float: right;width: 10$dollarpercnt;'>
+         <img src='$dollarpercntPUBURL$dollarpercnt/$dollarpercntUSERSWEB$dollarpercnt/$topic/$dollarpercntATTACHMENTLIST{topic=\\"$topic\\" web=\\"$dollarpercntUSERSWEB$dollarpercnt\\" format=\\"$fileName\\" limit=\\"1\\" extenstion=\\"gif,jpg,png\\"}$dollarpercnt' width='150px;' style='float: right;'/>
+      </div>
+   \"
+   }$percnt"
+rows="1"
+}%
+<div style="float: left; width: 89%;">
+<table class="metaDataHead"><thead></thead><tbody>
+%LDAPUSERS{
+casesensitive="off"
+hideunknown="off"
+include="%URLPARAM{"employee"}%"
+format="<tr><td>$percntMAKETEXT{\"Name\"}$percnt:</td><td>$cn</td></tr>
+<tr><td>$percntMAKETEXT{\"Direct dial\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Mobile\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Mail\"}$percnt:</td><td><a href='mailto:$mail' target='_top'>$mail</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Department\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Room\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"ID\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Fax\"}$percnt:</td><td>$</a></td></tr>
+<tr><td>$percntMAKETEXT{\"Role\"}$percnt:</td><td>$</a></td></tr>"
+limit="1"
+}%
+%SOLRFORMAT{
+"userSearch"
+format="<tr><td>$percntMAKETEXT{\"First name\"}$percnt:</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Experience\"}$percnt</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Languages\"}$percnt</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Place of residence\"}$percnt</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Hobbies\"}$percnt</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Personal mail\"}$percnt</td><td>$field_Email_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Social Media\"}$percnt</td><td>$field_FirstName_s</td></tr>
+        <tr><td>$percntMAKETEXT{\"Other\"}$percnt</td><td>$field_FirstName_s</td></tr>"
+}%
+</tbody></table>
+</div><div style="clear:both;"></div>
 </div>
 %TMPL:END%
 

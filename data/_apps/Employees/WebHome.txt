@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1400772344" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1447851377" format="1.1" reprev="2" version="2"}%
 %META:TOPICPARENT{name="WebHome"}%
 <div style="display:none;">
 <div class="widgetBlockTitle">%MAKETEXT{"Create new employee"}%</div>
@@ -16,16 +16,14 @@
 <div class="widgetBlockTitle">%MAKETEXT{"All employees"}%</div>
 <div class="widgetBlockContent">
 %TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Surname"}%* | *%MAKETEXT{"First name"}%* | *%MAKETEXT{"ID"}%* | *%MAKETEXT{"Job description"}%* | *%MAKETEXT{"Role"}%* | *%MAKETEXT{"Representative role"}%* | *%MAKETEXT{"Status"}%* |
-%SOLRSEARCH{
-"form:*EmployeeForm" 
-fields="web, topic, field_Surname_s, field_FirstName_s, field_ID_s, field_JobDescription_s, field_Function_lst, field_Representative_lst, field_Status_s"
-web="%WEB%"
-format="| <a href=\"%SCRIPTURL{view}%/$web/$topic\" title=\"$topic\">$field_Surname_s</a> | $field_FirstName_s | $field_ID_s | $field_JobDescription_s | $field_Function_lst | $field_Representative_lst | $percntMAKETEXT{\"$field_Status_s\"}$percnt | $n"
-footer=""
-sort="field_Surname_s asc"
-rows="9999999"
+| *%MAKETEXT{"Surname"}%* | *%MAKETEXT{"First name"}%* | *%MAKETEXT{"ID"}%* | *%MAKETEXT{"Direct dial"}%* | *%MAKETEXT{"Mail"}%* | *%MAKETEXT{"Mobile"}%* | *%MAKETEXT{"Department"}%* | *%MAKETEXT{"Room"}%* |
+%LDAPUSERS{
+   include=".*"
+   format="| [[EmployeeView?employee=$wikiName][$cn]] | | | | $mail | | | |"
+   hideunknown="off"
+   limit="9999"
 }%
+
 </table>
 </div>
 

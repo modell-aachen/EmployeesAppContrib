@@ -1,0 +1,8 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="" date="1447081253" format="1.1" version="4"}%
+%META:TOPICPARENT{name="WebHome"}%
+
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="EmployeeView"}%
+%META:PREFERENCE{name="TOPICTITLE" title="TOPICTITLE" type="Set" value="Employee"}%

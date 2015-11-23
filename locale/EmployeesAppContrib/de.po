@@ -65,3 +65,36 @@ msgstr "Status"
 
 msgid "Surname"
 msgstr "Nachname"
+
+msgid "Direct dial"
+msgstr "Durchwahl"
+
+msgid "Mail"
+msgstr "E-Mail"
+
+msgid "Mobile"
+msgstr "Handy"
+
+msgid "Department"
+msgstr "Abteilung"
+
+msgid "Room"
+msgstr "Raum"
+
+msgid "Experience"
+msgstr "Erfahrungen"
+
+msgid "Languages"
+msgstr "Sprachen"
+
+msgid "Place of residence"
+msgstr "Wohnort"
+
+msgid "Personal mail"
+msgstr "Persönliche E-Mail"
+
+msgid "Other"
+msgstr "Sonstiges"
+
+msgid "Edit personal Page"
+msgstr "Bearbeite persönliche Benutzerdaten"
