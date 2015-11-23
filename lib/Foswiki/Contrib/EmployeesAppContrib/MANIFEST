@@ -1,7 +1,8 @@
 !noci
-data/_apps/Employees/EmployeeEditTemplate.txt 0644
+data/System/EmployeesAppContrib.txt 0644
 data/_apps/Employees/EmployeeForm.txt 0644
 data/_apps/Employees/EmployeeTemplate.txt 0644
+data/_apps/Employees/EmployeeView.txt 0644
 data/_apps/Employees/EmployeeViewTemplate.txt 0644
 data/_apps/Employees/WebActions.txt 0644
 data/_apps/Employees/WebAtom.txt 0644
@@ -13,10 +14,10 @@ data/_apps/Employees/WebIndex.txt 0644
 data/_apps/Employees/WebNotify.txt 0644
 data/_apps/Employees/WebPreferences.txt 0644
 data/_apps/Employees/WebRss.txt 0644
-data/_apps/Employees/WebSearchAdvanced.txt 0644
 data/_apps/Employees/WebSearch.txt 0644
+data/_apps/Employees/WebSearchAdvanced.txt 0644
 data/_apps/Employees/WebStatistics.txt 0644
 data/_apps/Employees/WebTopicList.txt 0644
-data/System/EmployeesAppContrib.txt 0664
-locale/EmployeesAppContrib/de.po 0644
 lib/Foswiki/Contrib/EmployeesAppContrib.pm 0644
+locale/EmployeesAppContrib/de.po 0644
+
